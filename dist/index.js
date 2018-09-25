@@ -8,8 +8,8 @@ export default class App3D {
         this.settings = settings;
         this.scene = new Scene();
         this.updater = new Updater();
-        this.camera = this.createCamera(settings);
         this.container = findElement(settings.containerSelector);
+        this.camera = this.createCamera(settings);
         this.renderer = this.createRenderer(settings);
         this.container.appendChild(this.renderer.domElement);
         this.updater.onUpdateComplete = new Render(this);
