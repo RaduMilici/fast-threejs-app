@@ -8,9 +8,9 @@ export default class App3D {
         this.settings = settings;
         this.scene = new Scene();
         this.updater = new Updater();
-        this.camera = App3D.createCamera(settings);
+        this.camera = this.createCamera(settings);
         this.container = findElement(settings.containerSelector);
-        this.renderer = App3D.createRenderer(settings);
+        this.renderer = this.createRenderer(settings);
         this.container.appendChild(this.renderer.domElement);
         this.updater.onUpdateComplete = new Render(this);
     }
@@ -41,21 +41,30 @@ export default class App3D {
             object.parent.remove(object);
         }
     }
-    static createCamera({ camera, renderer }) {
+    createCamera({ camera, renderer }) {
         const { fov, near, far } = camera;
         const { width, height } = renderer;
-        return new PerspectiveCamera(fov, width / height, near, far);
+        const size = this.getSize({ width, height });
+        return new PerspectiveCamera(fov, size.width / size.height, near, far);
     }
-    static createRenderer({ renderer }) {
+    createRenderer({ renderer }) {
         const { width, height, antialias, alpha } = renderer;
         const webGLRenderer = new WebGLRenderer({ antialias, alpha });
-        webGLRenderer.setSize(width, height);
+        const size = this.getSize({ width, height });
+        webGLRenderer.setSize(size.width, size.height);
         return webGLRenderer;
     }
     removeChildren(parent) {
         for (let i = parent.children.length - 1; i >= 0; i--) {
             this.remove(parent.children[i]);
         }
+    }
+    getSize(size) {
+        const containerSize = {
+            width: this.container.offsetWidth,
+            height: this.container.offsetHeight
+        };
+        return Object.assign(containerSize, size);
     }
 }
 //# sourceMappingURL=index.js.map

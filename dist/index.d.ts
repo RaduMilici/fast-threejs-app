@@ -14,8 +14,9 @@ export default class App3D {
     clear(): void;
     add(object: Object3D | Component, parent?: Object3D | Scene): void;
     remove(object: Object3D | Component): void;
-    private static createCamera;
-    private static createRenderer;
+    private createCamera;
+    private createRenderer;
     private removeChildren;
+    private getSize;
 }
 //# sourceMappingURL=index.d.ts.map

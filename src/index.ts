@@ -14,9 +14,9 @@ export default class App3D {
   readonly updater: Updater = new Updater();
 
   constructor(readonly settings: settings) {
-    this.camera = App3D.createCamera(settings);
+    this.camera = this.createCamera(settings);
     this.container = findElement(settings.containerSelector);
-    this.renderer = App3D.createRenderer(settings);
+    this.renderer = this.createRenderer(settings);
     this.container.appendChild(this.renderer.domElement);
     this.updater.onUpdateComplete = new Render(this);
   }
