@@ -9,6 +9,7 @@ declare type settings = {
         width: number;
         height: number;
         antialias: boolean;
+        alpha: boolean;
     };
 };
 export default settings;
