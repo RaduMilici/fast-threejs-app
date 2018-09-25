@@ -1,5 +1,6 @@
 import { WebGLRenderer, Scene, PerspectiveCamera, Object3D } from 'three';
 import { Updater, Component } from 'pulsar-pathfinding';
+import Resize from './Resize';
 import Render from './Render';
 import Dispose from './Dispose';
 import findElement from './findElement';
@@ -15,9 +16,11 @@ export default class App3D {
         this.updater.onUpdateComplete = new Render(this);
     }
     start() {
+        this.resize = new Resize(this.renderer, this.camera, this.container);
         return this.updater.start();
     }
     stop() {
+        this.resize.stop();
         return this.updater.stop();
     }
     clear() {
@@ -62,7 +65,7 @@ export default class App3D {
     getSize(size) {
         const containerSize = {
             width: this.container.offsetWidth,
-            height: this.container.offsetHeight
+            height: this.container.offsetHeight,
         };
         if (typeof size.width === 'number') {
             containerSize.width = size.width;

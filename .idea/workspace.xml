@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aa941a4-eaa3-4c70-8d23-7be57325adcc" name="Default Changelist" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/radu_milici.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dispose.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Render.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/findElement.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/settings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resize.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Dispose.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Dispose.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Render.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Render.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/findElement.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/findElement.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/settings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/settings.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,31 +24,31 @@
     <session id="-1560334203">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="2" />
           <entry key="json" value="4" />
-          <entry key="ts" value="6" />
+          <entry key="ts" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="2" />
-          <entry key="TypeScript" value="6" />
+          <entry key="TypeScript" value="7" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="48" />
-          <entry key="ts" value="53" />
+          <entry key="ts" value="431" />
           <entry key="txt" value="12" />
         </counts>
       </usages-collector>
@@ -56,13 +56,13 @@
         <counts>
           <entry key="JSON" value="41" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="TypeScript" value="53" />
+          <entry key="TypeScript" value="431" />
           <entry key="tsconfig" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="2" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -78,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="542">
+              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
@@ -90,11 +90,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Resize.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+            <state relative-caret-position="650">
+              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Render.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state>
+              <caret selection-end-column="47" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -163,9 +166,11 @@
         <option value="$PROJECT_DIR$/src/findElement.ts" />
         <option value="$PROJECT_DIR$/src/Render.ts" />
         <option value="$PROJECT_DIR$/src/Dispose.ts" />
-        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/resize.ts" />
+        <option value="$PROJECT_DIR$/src/Resize.ts" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
       </list>
     </option>
   </component>
@@ -203,6 +208,11 @@
             <path>
               <item name="fast-threejs-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="fast-threejs-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fast-threejs-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fast-threejs-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,16 +273,19 @@
       <workItem from="1537860112709" duration="1283000" />
       <workItem from="1537864142986" duration="99000" />
       <workItem from="1537864794384" duration="49000" />
+      <workItem from="1537886128202" duration="306000" />
+      <workItem from="1537886436675" duration="316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1431000" />
+    <option name="totallyTimeSpent" value="2053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="22" width="1920" height="1058" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17956819" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12901527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -285,7 +298,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32947367" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32947367" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -309,13 +322,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1716">
+          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -328,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Render.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state>
+          <caret selection-end-column="47" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
@@ -350,10 +360,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+    <entry file="file://$PROJECT_DIR$/src/Resize.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        <state relative-caret-position="650">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

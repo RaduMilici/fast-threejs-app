@@ -8,6 +8,7 @@ export default class App3D {
     readonly container: HTMLElement;
     readonly scene: Scene;
     readonly updater: Updater;
+    private resize;
     constructor(settings: settings);
     start(): boolean;
     stop(): boolean;
