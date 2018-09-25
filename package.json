@@ -1,0 +1,33 @@
+{
+  "name": "fast-threejs-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "tsc -watch",
+    "format": "prettier --single-quote --print-width 100 --trailing-comma es5 --write $(git ls-files \"*.ts\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaduMilici/fast-threejs-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaduMilici/fast-threejs-app/issues"
+  },
+  "homepage": "https://github.com/RaduMilici/fast-threejs-app#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0",
+    "prettier": "^1.14.3",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "@types/three": "^0.92.23",
+    "pulsar-pathfinding": "^1.3.11",
+    "three": "^0.96.0"
+  }
+}

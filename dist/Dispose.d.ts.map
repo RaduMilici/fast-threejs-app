@@ -1,0 +1,1 @@
+{"version":3,"file":"Dispose.d.ts","sourceRoot":"","sources":["../src/Dispose.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,OAAO,CAAC;AAE9B,MAAM,CAAC,OAAO,OAAO,OAAO;gBACd,KAAK,EAAE,KAAK;IAIxB,OAAO,CAAC,MAAM,CAAC,SAAS;IAQxB,OAAO,CAAC,MAAM,CAAC,IAAI;CAgBpB"}
