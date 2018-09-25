@@ -16,7 +16,7 @@ export default class App3D {
   constructor(readonly settings: settings) {
     this.camera = App3D.createCamera(settings);
     this.container = findElement(settings.containerSelector);
-    this.renderer = App3D.createRenderer(settings);
+    this.renderer = this.createRenderer(settings);
     this.container.appendChild(this.renderer.domElement);
     this.updater.onUpdateComplete = new Render(this);
   }
@@ -61,10 +61,13 @@ export default class App3D {
     return new PerspectiveCamera(fov, width / height, near, far);
   }
 
-  private static createRenderer({ renderer }: settings): WebGLRenderer {
+  private createRenderer({ renderer }: settings): WebGLRenderer {
     const { width, height, antialias } = renderer;
     const webGLRenderer: WebGLRenderer = new WebGLRenderer({ antialias });
-    webGLRenderer.setSize(width, height);
+    webGLRenderer.setSize(
+      width || this.container.offsetWidth, 
+      height || this.container.offsetHeight
+    );
     return webGLRenderer;
   }
 

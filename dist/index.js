@@ -10,7 +10,7 @@ export default class App3D {
         this.updater = new Updater();
         this.camera = App3D.createCamera(settings);
         this.container = findElement(settings.containerSelector);
-        this.renderer = App3D.createRenderer(settings);
+        this.renderer = this.createRenderer(settings);
         this.container.appendChild(this.renderer.domElement);
         this.updater.onUpdateComplete = new Render(this);
     }
@@ -46,10 +46,10 @@ export default class App3D {
         const { width, height } = renderer;
         return new PerspectiveCamera(fov, width / height, near, far);
     }
-    static createRenderer({ renderer }) {
+    createRenderer({ renderer }) {
         const { width, height, antialias } = renderer;
         const webGLRenderer = new WebGLRenderer({ antialias });
-        webGLRenderer.setSize(width, height);
+        webGLRenderer.setSize(width || this.container.offsetWidth, height || this.container.offsetHeight);
         return webGLRenderer;
     }
     removeChildren(parent) {
