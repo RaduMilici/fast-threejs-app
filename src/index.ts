@@ -82,6 +82,14 @@ export default class App3D {
       height: this.container.offsetHeight
     };
 
-    return Object.assign(containerSize, size);
+    if (typeof size.width === 'number') {
+      containerSize.width = size.width;
+    }
+
+    if (typeof size.height === 'number') {
+      containerSize.height = size.height;
+    }
+
+    return containerSize;
   }
 }

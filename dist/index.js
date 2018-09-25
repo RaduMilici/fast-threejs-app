@@ -64,7 +64,13 @@ export default class App3D {
             width: this.container.offsetWidth,
             height: this.container.offsetHeight
         };
-        return Object.assign(containerSize, size);
+        if (typeof size.width === 'number') {
+            containerSize.width = size.width;
+        }
+        if (typeof size.height === 'number') {
+            containerSize.height = size.height;
+        }
+        return containerSize;
     }
 }
 //# sourceMappingURL=index.js.map
